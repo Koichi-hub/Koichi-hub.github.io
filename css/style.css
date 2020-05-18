@@ -48,7 +48,7 @@ body{
   z-index: 1000;
 }
 .carousel-item img{
-  height: 93vh;
+  height: 96vh;
 }
 .on_slider{
   width: 100%;
@@ -90,7 +90,7 @@ body{
 }
 
 .my_block_1{
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   max-width: 100%;
   background: url(https://abali.ru/wp-content/uploads/2013/05/goluboy_fon.jpg) center center no-repeat;
@@ -145,17 +145,16 @@ body{
 }
 .my_block_1_3{
   padding: 5px;
-  margin-top: 40px;
   float: left;
   width: 100%;
-  height: 260px;
 }
 .my_block_1_3-in{
+  margin-top: 30px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 34%;
-  height: 100%;
+  width: 470px;
+  height: 250px;
   background: #95a5a6;
   padding: 30px;
   box-shadow: 5px 5px 20px;
@@ -188,22 +187,21 @@ body{
 
 .my_block_2{
   width: 100%;
-  height: 93vh;
-  background: url(https://www.wallpaperflare.com/static/578/493/137/geometry-poly-vector-dots-wallpaper.jpg) no-repeat;
+  height: 100vh;
+  background: url(https://www.wallpaperflare.com/static/578/493/137/geometry-poly-vector-dots-wallpaper.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .footer{
-  padding: 5px;
+  padding: 15px;
   width: 100%;
-  height: 200px;
+  height: 250px;
   background: url(https://wildexodus.com/wp-content/uploads/2015/02/footer-graphic.png);
   background-size: cover;
 }
 .footer-inner{
   padding: 5px;
-  width: 40%;
-  height: 100%;
+  width: 45%;
   float: left;
 }
 .footer-inner-text{
@@ -231,7 +229,6 @@ body{
   padding: 10px;
   float: left;
   width: 30%;
-  height: 100%;
   margin-left: 10px;
 }
 .me_link-inner{
@@ -286,4 +283,35 @@ body{
 }
 #telegram:hover{
   color: #2980b9;
+}
+
+@media screen and (max-width:992px){
+  .slider_here{
+    display: none;
+  }
+  .my_block_1{
+    display: none;
+  }
+}
+
+@media screen and (max-width:540px){
+  .footer-inner-text-1{
+    display: none;
+  }
+  .footer{
+    height: 160px;
+  }
+  .me_link{
+    float: none;
+  }
+  .me_link-inner h3{
+    display: none;
+  }
+  .me_link-inner{
+    margin-left: 0;
+  }
+  .footer-inner-text{
+    margin-left: 0;
+    width: 200px;
+  }
 }
