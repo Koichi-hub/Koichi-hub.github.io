@@ -304,6 +304,9 @@ body{
 }
 
 @media screen and (max-width:595px){
+  .footer{
+    height: 270px;
+  }
   .footer-inner{
     width: 100%;
   }
@@ -311,7 +314,7 @@ body{
     margin-left: 0;
   }
   #footer-table{
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .me_link-1{
     display: block;
