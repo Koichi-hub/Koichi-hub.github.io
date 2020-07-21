@@ -1,0 +1,352 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #2c3e50;
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  transition: 0.2s;
+  color: black;
+}
+a:hover{
+  color: #1abc9c;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #34495e;
+  z-index: 999;
+}
+.logo{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50px;
+  width: 120px;
+  height: 60px;
+  background-color: #2c3e50;
+  overflow: hidden;
+}
+.logo p{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+.line{
+  position: absolute;
+  left: -100%;
+  bottom: 0px;
+  width: 100%;
+  height: 5px;
+  background: #c0392b;
+  transition: 0.4s;
+}
+.logo:hover .line{
+  transform: translate(100%, 0px);
+}
+.navbar{
+  margin-left: calc(50% - 200px);
+  height: 100%;
+  width: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.item{
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.text{
+  display: flex;
+  padding: 5px 15px 0 15px;
+  height: 55px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.line_1{
+  display: flex;
+  margin-left: -100%;
+  width: 100%;
+  height: 5px;
+  background: #e74c3c;
+  transition: 0.4s;
+}
+.item:hover .line_1{
+  transform: translate(100%, 0px);
+}
+.item:hover{
+  background: #ecf0f1;
+  color: black;
+}
+#InfoBox{
+  background-color: #ecf0f1;
+  margin-top: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.navigation{
+  padding: 10px;
+  position: absolute;
+  min-width: 200px;
+  transition: 1s;
+  display: none;
+}
+.contacts{
+  padding: 10px;
+  position: absolute;
+  min-width: 200px;
+  transition: 1s;
+  display: none;
+}
+
+.post_head{
+  width: 100%;
+  height: 300px;
+  background-color: #7f8c8d;
+  background-image: url(image/error-in-php-wordpress-code_free_stock_photos_picjumbo_hnck2360-2210x1474.jpg);
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.5;
+}
+.content{
+  width: 100%;
+  background: #ecf0f1;
+}
+.SayHello{
+  width: 100%;
+  height: 550px;
+  background-color: #2c3e50;
+}
+.About{
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  font-style: italic;
+  padding-left: 30px;
+  background: #34495e;
+  align-items: center;
+}
+.AboutMe{
+  height: 300px;
+  width: 100%;
+}
+.status{
+  float: left;
+  color: white;
+  height: 100%;
+  width: calc(100% - 250px);
+  padding: 0 20px;
+}
+.status h1::first-letter{
+  color: #e74c3c;
+}
+.status p{
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+.skills{
+  float:left;
+  color: white;
+  padding: 20px 40px;
+  height: 200px;
+  width: 50%;
+}
+.skills_list li{
+  font-size: 19px;
+  line-height: 1.6;
+}
+.skills_1{
+  float:left;
+  color: white;
+  padding: 20px 40px;
+  height: 200px;
+  width: 50%;
+}
+
+.servies{
+  width: 100%;
+  height: 510px;
+}
+.AboutServ{
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  font-style: italic;
+  padding-left: 30px;
+  background: #34495e;
+  align-items: center;
+}
+.servies_list{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.serv_item{
+  height: 100%;
+  flex-grow: 2;
+  overflow: hidden;
+}
+.serv_item_class div{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+}
+.serv_item_class{
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+  opacity: 0.9;
+}
+.desktop{
+  background-image: url(image/modern-desktop-setup-2210x1473.jpg);
+  background-size: 100% 100%;
+}
+.site{
+  background-image: url(image/website-traffic-analytics-2210x1473.jpg);
+  background-size: 100% 100%;
+}
+.game{
+  background-image: url(image/playing-games-on-playstation-4_free_stock_photos_picjumbo_HNCK4500-2210x1474.jpg);
+  background-size: 100% 100%;
+}
+.description{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  background: #ecf0f1;
+  padding: 10px;
+  font-size: 20px;
+}
+.description li{
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+.price{
+  width: 100%;
+  height: 590px;
+  background: #1abc9c;
+}
+.AboutPrice{
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  font-style: italic;
+  padding-left: 30px;
+  background: #34495e;
+  align-items: center;
+}
+.price_list_img{
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+}
+.price_item{
+  flex-grow: 2;
+  height: 100%;
+  overflow: hidden;
+}
+.price_item_ref{
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+.price_item:hover .price_item_ref{
+  transform: scale(1.2);
+}
+.price_slide{
+  position: relative;
+  width: 100%;
+}
+.slide{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: #ecf0f1;
+  left: 0;
+	bottom: 0;
+  display: none;
+}
+.slide p{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+.app{
+  background-image: url(image/photo-1461749280684-dccba630e2f6.jpg);
+  background-size: 100% 100%;
+}
+.web-site{
+  background-image: url(image/photo-1526628953301-3e589a6a8b74.jpg);
+  background-size: 100% 100%;
+}
+.videogame{
+  background-image: url(image/photo-1573215193469-e0b7a554873a.jpg);
+  background-size: 100% 100%;
+}
+.bot{
+  background-image: url(image/photo-1527430253228-e93688616381.jpg);
+  background-size: 100% 100%;
+}
+.price_list{
+  background: #ecf0f1;
+  padding: 20px 10px 0 0;
+  height: 300px;
+  width: 100%;
+  font-size: 20px;
+}
+.price_list li{
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+footer{
+  position:relative;
+  width: 100%;
+  height: 260px;
+  background-color: #1abc9c;
+}
+.materials{
+  padding-left: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ecf0f1;
+}
+.materials li {
+  line-height: 1.5;
+}
