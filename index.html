@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Timur.Net</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <span class="lines"></span>
+              <div class="logo__row">
+                <p><span id="Fletter">Т</span>имур<br><span id="Fletter">Д</span>авыдов</p>
+              </div>
+            </div>
+            <nav class="navbar">
+              <div class="navbar__item">
+                <span class="lines"></span>
+                <div class="item__row">
+                  Навигация
+                </div>
+                <div class="nav__box" id="nav__box">
+                  <a href="#AboutMe">Обо мне</a> <br>
+                  <a href="#service">Услуги</a> <br>
+                  <a href="#tasks">Цели</a> <br>
+                  <a href="#portfolio">Портфолио</a>
+                </div>
+              </div>
+              <div class="navbar__item">
+                <span class="lines"></span>
+                <div class="item__row">
+                  Контакты
+                </div>
+                <div class="nav__box" id="nav__box">
+                  <a href="https://vk.com/neludimiy_chelovek" target="_blank">Вконтакте</a> <br>
+                  <a href="#">Телеграм</a>
+                </div>
+              </div>
+            </nav>
+            <div class="navbar__mobile">
+              <div class="nav__mob__item">
+                <div class="nav__title">
+                  Навигация
+                </div>
+                <div class="nav__point" id="nav__box__mob">
+                  <a href="#AboutMe__mob">Обо мне</a> <br>
+                  <a href="#service__mob">Услуги</a> <br>
+                  <a href="#tasks__mob">Цели</a> <br>
+                  <a href="#portfolio__mob">Портфолио</a>
+                </div>
+              </div>
+              <div class="nav__mob__item">
+                <div class="nav__title">
+                  Контакты
+                </div>
+                <div class="nav__point" id="nav__box__mob">
+                  <a href="https://vk.com/neludimiy_chelovek" target="_blank">Вконтакте</a> <br>
+                  <a href="#">Телеграм</a>
+                </div>
+              </div>
+              <div class="navbar__btn">
+                <div class="btn__line"></div>
+              </div>
+            </div>
+            <script type="text/javascript">
+              $(".navbar").children().hover(function(){
+                $(this).find(".nav__box").css("display","block")
+              }, function(){
+                $(this).find(".nav__box").css("display","none")
+              });
+
+              $(".navbar__btn").on("click", function(){
+                $(this).toggleClass("active");
+                $(".navbar__mobile").toggleClass("navbar__mobile__active");
+              });
+
+              $(function(){
+                $("#nav__box").children().on('click', function(e){
+                  var href = $(this).attr("href");
+                  $('html,body').stop().animate({ scrollTop: $(href).offset().top - 50 }, 800);
+                  e.preventDefault();
+                });
+                $("#nav__box__mob").children().on('click', function(e){
+                  var href = $(this).attr("href");
+                  $('html,body').stop().animate({ scrollTop: $(href).offset().top - 80 }, 800);
+                  e.preventDefault();
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </header>
+        <main>
+          <div class="container">
+            <div class="post__head">
+            </div>
+            <div class="content">
+              <div class="rating__box">
+                <div class="rating">
+                  <div class="msg" title="Оставь оценку)">
+                    <p>Нравится страница?</p>
+                  </div>
+                  <div class="question">
+                    <a href="#"><img src="css/image/like.svg" alt="" id="like"></a>
+                    <a href="#"><img src="css/image/dislike.svg" alt="" id="dislike"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="AboutMe" id="AboutMe">
+                <div class="new_description">
+                  <div class="dec_line"></div>
+                  <div class="dec_text">
+                    Обо мне...
+                  </div>
+                </div>
+                <div class="AboutMe__row">
+                  <div class="stack__card">
+                    <div class="the__card me">
+                      <div class="the__card-front">
+                        <div class="item-info">
+                          <img src="css/image/BYoPtZnIo9w.png" alt="">
+                          <div class="view">
+                            <h2>Тимур Давыдов</h2>
+                            <small>18 лiт</small>
+                            <p>Программист C# <br>
+                              Абитуриент
+                            </p>
+                          </div>
+                          <div class="status">
+                            <h2>Статус:</h2>
+                            <blockquote>
+                              Простые решения - трудная жизнь.
+                              Трудные решения - простая жизнь.
+                            </blockquote>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="the__card-back">
+
+                      </div>
+                    </div>
+                    <div class="the__card">
+                      <div class="the__card-front">
+                        <div class="item-info">
+                          <h2 id="item-skills">Навыки:</h2>
+                            <li>Могу написать сайт</li>
+                            <li>Могу написать игру на Unity</li>
+                            <li>Могу написать пк приложение</li>
+                            <li>Могу предложить свой алгоритм</li>
+                        </div>
+                      </div>
+                      <div class="the__card-back">
+
+                      </div>
+                    </div>
+                    <div class="the__card">
+                      <div class="the__card-front">
+                        <div class="item-info">
+                          <h2>Знания:</h2>
+                            <li>C#, C++</li>
+                            <li>HTML, CSS, JS, PHP</li>
+                            <li>Python</li>
+                        </div>
+                      </div>
+                      <div class="the__card-back">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="service" id="service">
+                <div class="new_description">
+                  <div class="dec_line"></div>
+                  <div class="dec_text">
+                    Услуги
+                  </div>
+                  <div class="dec_info">
+                    Нажмите на интересующую услугу.
+                  </div>
+                </div>
+                <div class="service__inner">
+                  <div class="web__view" id="view">
+                    <a ><div class="btn">◄</div></a>
+                    <div class="view__line">
+                      Web-разработка
+                    </div>
+                  </div>
+                  <div class="desk__view" id="view">
+                    <a ><div class="btn">◄</div></a>
+                    <div class="view__line">
+                      Desktop-разработка
+                    </div>
+                  </div>
+                  <div class="games__view" id="view">
+                    <a ><div class="btn">◄</div></a>
+                    <div class="view__line">
+                      Game-dev
+                    </div>
+                  </div>
+                  <div class="bots__view" id="view">
+                    <a ><div class="btn">◄</div></a>
+                    <div class="view__line">
+                      Bot-dev
+                    </div>
+                  </div>
+                  <div class="service__row">
+                    <div class="web" id="box">
+                      <div class="web__in" id="box__inner">
+                        <p>Web</p>
+                      </div>
+                    </div>
+                    <div class="desk" id="box">
+                      <div class="desk__in" id="box__inner">
+                        <p>Desk</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__row bottom">
+                    <div class="games" id="box">
+                      <div class="games__in" id="box__inner">
+                        <p>Games</p>
+                      </div>
+                    </div>
+                    <div class="bots" id="box">
+                      <div class="bots__in" id="box__inner">
+                        <p>Bots</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  $(".service__row").children().on("click", function(){
+                    var name = "." + $(this).attr("class") + "__view";
+                    $(".service__inner").find(name).fadeIn("slow");
+                    $(name).find(".btn").on("click", function(){$(name).fadeOut()});
+                  });
+                </script>
+              </div>
+              <div class="tasks" id="tasks">
+                <div class="new_description">
+                  <div class="dec_line"></div>
+                  <div class="dec_text">
+                    Цели
+                  </div>
+                </div>
+                <div class="tasks__row">
+                  <h2>Цели на 2020 год</h2>
+                  <ul>
+                    <li>Поступить в ВУЗ на бюджет</li>
+                    <li>Изучить Node.js</li>
+                    <li>Найти работу по специальности</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="portfolio" id="portfolio">
+                <div class="new_description">
+                  <div class="dec_line"></div>
+                  <div class="dec_text">
+                    Портфолио
+                  </div>
+                </div>
+                <div class="portfolio__row">
+
+                </div>
+              </div>
+            </div>
+            <div class="content__mobile">
+              <div class="Me" id="AboutMe__mob">
+                <div class="mobile__line">
+                  <p>×<br>Обо мне...<br>+</p>
+                </div>
+              </div>
+              <div class="Serv" id="service__mob">
+                <div class="mobile__line">
+                  <p>×<br>Услуги<br>+</p>
+                </div>
+              </div>
+              <div class="Task" id="tasks__mob">
+                <div class="mobile__line">
+                  <p>×<br>Цели<br>+</p>
+                </div>
+              </div>
+              <div class="Port" id="portfolio__mob">
+                <div class="mobile__line">
+                  <p>×<br>Портфолио<br>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div class="container">
+            <div class="footer">
+              <div class="foot__line">
+
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+  </body>
+</html>
